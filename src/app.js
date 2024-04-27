@@ -5,7 +5,7 @@ import helmet from "helmet";
 import mongoose from "mongoose";
 import morgan from "morgan";
 
-import userV1RateRoutes from "./routes/v1/users/story.routes.js";
+import userV1StoryRoutes from "./routes/v1/users/story.routes.js";
 import {MONGODB_URI} from "./config/config.js";
 
 dotenv.config();
@@ -23,6 +23,6 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.use("/api/v1/users/rates", userV1RateRoutes);
+app.use("/api/v1/users/stories", userV1StoryRoutes);
 
 export default app;
