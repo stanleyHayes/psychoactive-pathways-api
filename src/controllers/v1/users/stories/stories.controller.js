@@ -43,7 +43,7 @@ export const getStory = async (req, res) => {
 export const getStories = async (req, res) => {
     try {
         const match = {
-            user: req.user._id
+
         };
         if (req.query.status) {
             match.status = req.query.status;
