@@ -23,6 +23,6 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("dev"));
 
-app.use("/api/v1/users/stories", userV1StoryRoutes);
+app.use("/api/v1/user/stories", userV1StoryRoutes);
 
 export default app;
